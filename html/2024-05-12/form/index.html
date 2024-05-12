@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html>
 <body>
-
+  <head>
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<style>
+    input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+</style>
 <h2>HTML Forms</h2>
 
 <form action="/action_page.php">
-  <label for="fname">First name:</label><br>
+  <label style="width: max-content;" for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname" ><br>
+  <label for="fname">College:</label><br>
+  <input type="text" id="college" name="fname" value="hijli" readonly><br>
   <label for="lname">Last name:</label><br>
   <input type="text" id="lname" name="lname" placeholder=""><br><br>
 
@@ -23,9 +38,9 @@
     <label for="sir">Sir:</label><br>
     <select name="sir" id="sir">
         <option value="1">Sir 1</option>
-        <option value="2">Sir 2</option>
-        <option value="3">Sir 3</option>
-        <option value="4">Sir 4</option>
+        <option value="2" selected>Sir 2</option>
+        <option value="3" >Sir 3</option>
+        <option value="4" >Sir 4</option>
         
     </select>
 
