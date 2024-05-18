@@ -1,0 +1,36 @@
+/* Element Selector */
+/* p {
+    color: blue;
+    font-size: 20px;
+}
+
+#this-id{
+    color: green;
+}
+.highlight {
+    background-color: yellow;
+    color:red;
+} */
+
+
+p[target="_blank"] {
+    color: red;
+}
+
+
+[mobile] {
+    color: red;
+}
+
+
+button:hover {
+    background-color: lightblue;
+}
+
+p::before {
+    content: "🚨Ram ";
+}
+p::after {
+    content: " Sita🚨";
+}
+

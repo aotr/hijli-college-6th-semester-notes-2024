@@ -1,0 +1,8 @@
+.box {
+    width: 200px; /* Content width */
+    height: 100px; /* Content height */
+    padding: 20px; /* Space inside the border, around the content */
+    border: 5px solid black; /* The frame around the content */
+    margin: 30px; /* Space outside the border, separating from other elements */
+    background-color: lightgrey; /* Background color for content visibility */
+}
