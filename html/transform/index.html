@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Animations Example</title>
+    <style>
+        @keyframes slidein {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            animation: slidein 3s forwards;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

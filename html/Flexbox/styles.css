@@ -1,0 +1,18 @@
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    border: 2px solid #000;
+}
+
+.flex-item {
+    background-color: lightblue;
+    padding: 20px;
+    border: 1px solid #000;
+}
+
+.flex-item > p {
+    font-size: 1.5em;
+    color: #fff;
+}

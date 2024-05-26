@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+        h2 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group textarea {
+            height: 60px;
+        }
+        .form-group input[type="checkbox"] {
+            width: auto;
+        }
+        .form-group .inline {
+            display: inline-block;
+            width: auto;
+        }
+        .form-group .inline label {
+            display: inline;
+        }
+        .form-group .inline input {
+            display: inline;
+        }
+        .signature-section {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>APPLICATION FORM FOR CONTINUING EDUCATION PROGRAMMES AT SALIMA TECHNICAL COLLEGE</h2>
+    <p><strong>2024 Intake</strong><br>Closing date for receiving applications is <strong>10<sup>th</sup> November, 2023</strong></p>
+    <p><strong>NOTES – Please read carefully</strong></p>
+    <ol>
+        <li>Complete this form in block letters</li>
+        <li>Give phone number, postal or email address through which you can easily be contacted.</li>
+        <li>Fields marked with asterisks (*) are compulsory</li>
+        <li>The college will not be held responsible for application forms which go astray, lack necessary information and that are incorrectly filled.</li>
+    </ol>
+
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="surname">Applicant’s Surname: *</label>
+            <input type="text" id="surname" name="surname" required>
+        </div>
+        <div class="form-group">
+            <label for="firstName">Applicant’s First Name: *</label>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="form-group">
+            <label for="middleName">Applicant’s Middle Name:</label>
+            <input type="text" id="middleName" name="middleName">
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth: *</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <div class="form-group">
+            <label>Gender: *</label>
+            <div class="inline">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+            </div>
+            <div class="inline">
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="district">District of Origin: *</label>
+            <input type="text" id="district" name="district" required>
+        </div>
+        <div class="form-group">
+            <label for="authority">Traditional Authority:</label>
+            <input type="text" id="authority" name="authority">
+        </div>
+        <div class="form-group">
+            <label for="village">Village:</label>
+            <input type="text" id="village" name="village">
+        </div>
+        <div class="form-group">
+            <label for="address">Postal/Email Address: *</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+        <div class="form-group">
+            <label for="guardianName">Guardian Name:</label>
+            <input type="text" id="guardianName" name="guardianName">
+        </div>
+        <div class="form-group">
+            <label for="guardianPhone">Guardian Telephone/Cell: *</label>
+            <input type="text" id="guardianPhone" name="guardianPhone" required>
+        </div>
+        <div class="form-group">
+            <label for="disability">If you are a person with a disability, please indicate the type of disability: *</label>
+            <textarea id="disability" name="disability" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="firstChoice">Please indicate the Occupations applied for in order of priority:</label>
+            <label for="firstChoice">First Choice: *</label>
+            <input type="text" id="firstChoice" name="firstChoice" required>
+        </div>
+        <div class="form-group">
+            <label for="secondChoice">Second Choice: *</label>
+            <input type="text" id="secondChoice" name="secondChoice" required>
+        </div>
+        <div class="form-group">
+            <label>Will you need boarding space?</label>
+            <div class="inline">
+                <input type="checkbox" id="boardingYes" name="boarding" value="yes">
+                <label for="boardingYes">Yes</label>
+            </div>
+            <div class="inline">
+                <input type="checkbox" id="boardingNo" name="boarding" value="no">
+                <label for="boardingNo">No</label>
+            </div>
+        </div>
+
+        <div class="signature-section">
+            <p>**Please attach a copy of your Malawi School Certificate of Education or its equivalent**</p>
+            <p>
+                I, <input type="text" name="applicantNameSignature" style="width: 200px;">, hereby confirm that the information given above is true to the best of my knowledge.
+            </p>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="signature">Signature:</label>
+                <input type="text" id="signature" name="signature" style="width: 200px;" required>
+            </div>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
