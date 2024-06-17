@@ -1,9 +1,8 @@
 
-document.querySelector("#myButton").addEventListener("click", function () { 
-    document.querySelector("#header").innerHTML = "Hello, World!";
-    document.querySelector("#header").style.color = "red";
-});
 
+$("#myButton").click(function () { 
+    $("#header").html("Hello, World!").css('color', 'red');
+});
 
 
 
