@@ -1,7 +1,3 @@
-### Comprehensive JavaScript Notes for 9th Grade Students
-
----
-
 ### Introduction to JavaScript
 
 JavaScript is a programming language used to create interactive effects within web browsers. It enables you to add dynamic elements like form validation, interactive maps, animated graphics, and more.
